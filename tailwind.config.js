@@ -17,6 +17,22 @@ module.exports = {
         burtons: 'burtons',
       },
     },
+    screens: {
+      'sxl': {'max': '1535px'},
+      // => @media (max-width: 1535px) { ... }
+
+      'sxl': {'max': '1279px'},
+      // => @media (max-width: 1279px) { ... }
+
+      'slg': {'max': '1023px'},
+      // => @media (max-width: 1023px) { ... }
+
+      'md': {'max': '376px'},
+      // => @media (max-width: 767px) { ... }
+
+      'sm': {'max': '321px'},
+      // => @media (max-width: 639px) { ... }
+    },
   },
   plugins: [],
 }
