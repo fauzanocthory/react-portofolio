@@ -44,10 +44,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-        <section className="min-h-screen">
+        <section className="">
           <nav className="py-10 mb-2 flex justify-between">
             <h1 className="dark:text-gray-200 text-xl font-burtons">developedbyfauzan</h1>
-            <ul className="flex items-center max-[320px]:flex-col-reverse max-[320px]:flex-col-reverse max-[320px]:gap-6">
+            <ul className="flex items-center max-[320px]:flex-col-reverse max-[550px]:flex-col-reverse max-[320px]:gap-6">
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-gray-200" />
               </li>
