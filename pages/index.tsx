@@ -47,19 +47,19 @@ export default function Home() {
         <section className="min-h-screen">
           <nav className="py-10 mb-2 flex justify-between">
             <h1 className="dark:text-gray-200 text-xl font-burtons">developedbyfauzan</h1>
-            <ul className="flex items-center">
+            <ul className="flex items-center max-[320px]:flex-col-reverse max-[320px]:flex-col-reverse max-[320px]:gap-6">
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-gray-200" />
               </li>
               <li>
-                <a className="bg-gradient-to-r from-cyan-400 to bg-cyan-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a>
+                <a className="bg-gradient-to-r from-cyan-400 to bg-cyan-500 text-white px-4 py-2 rounded-md ml-8 max-[320px]:ml-4" href="#">Resume</a>
               </li>
             </ul>
           </nav>
           <div className="text-center p-2">   
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">Fauzan Octhory</h2>
             <h3 className="dark:text-gray-200 text-2xl py-2 md:text-3xl">Just a Learner Developer</h3>
-            <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-5 overflow-hidden md:h-96 md:w-96">
+            <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-5 overflow-hidden max-[320px]:h-40 max-[320px]:w-40">
               <Image src={fauzan} className="px-10" alt="fauzan" fill style={{objectFit: "cover"}}/>
             </div>
             <p className="dark:text-gray-200 text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto">
