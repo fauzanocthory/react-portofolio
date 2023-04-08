@@ -94,7 +94,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="lg:flex sm:flex-col gap-10">
+          <div className="lg:flex md:flex-col sm:flex-col gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={design} alt="Logo" width={100} height={100}  className="m-auto"/>
               <h3 className="dark:text-gray-900 text-lg font-medium pt-8 pb-2 text-teal-600 underline">Node JS</h3>
@@ -176,7 +176,7 @@ export default function Home() {
               </h3>
             </div>
             <div  className="basis-1/3 flex-1">
-              <Image onClick={bukaTabBaruPhotoSharing} alt="" src={web4} className="rounded-lg object-cover hover:animate-pulse hover:cursor-pointer" width={'0.1'} height={'0.1'} layout={"responsive"}/>
+              <Image onClick={bukaTabBaruPhotoSharing} alt="" src={web4} className="rounded-lg object-cover hover:animate-pulse hover:cursor-pointer" width={'0.1'} height={'0.1'}/>
               <h3 className="text-center text-2xl text-teal-600 p-4">
                 Aplikasi Photo Sharing App <br /> dengan menggunakan NextJS, ExpressJS dan MariaDB
               </h3>
