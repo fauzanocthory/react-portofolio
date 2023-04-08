@@ -67,7 +67,9 @@ export default function Home() {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
+          <a href={""}>
             <AiFillTwitterCircle />
+            </a>
             <a href={"https://www.linkedin.com/in/fauzan-octhory-lukfi-8b734219a"}>
               <AiFillLinkedin />
             </a>
