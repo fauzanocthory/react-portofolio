@@ -36,6 +36,13 @@ import Link from "next/link"
 
 export default function Home() {
   const [darkMode, setDarkMode ] = useState(false)
+  const bukaTabBaruPhotoSharing = () => {
+    window.open("https://odd-gold-gecko-cuff.cyclic.app/login");
+  };
+  const bukaTabBaruKasirApp = () => {
+    window.open("https://kasir-app-five.vercel.app/");
+  };
+
   return (
     <div className={darkMode ? "dark" : ""}>
       <Head>
@@ -143,29 +150,34 @@ export default function Home() {
             <h3 className="text-4xl py-1 text-teal-500 underline underline-offset-8">Portofolio</h3>
             <p className="dark:text-gray-200 text-md py-2 leading-8 text-gray-800">
               Inilah project-project yang pernah saya buat, ya walaupun belum kelihatan professional tapi jadilah dari pada engga hehe
+              <h4>
+                Jika anda ingin melihat-lihat silahkan klik gambar dibawah
+                <br/>Username : root
+                <br/>password : root
+              </h4>
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div  className="basis-1/3 flex-1">
-              <Image alt="" src={web1} className="rounded-lg object-cover" width={'0.1'} height={'0.1'} layout={"responsive"}/>
+              <Image onClick={bukaTabBaruKasirApp} alt="" src={web1} className="rounded-lg object-cover hover:animate-pulse hover:cursor-pointer" width={'0.1'} height={'0.1'} layout={"responsive"}/>
               <h3 className="text-center text-2xl text-teal-600 p-4">
                 Aplikasi Pemesanan <br /> Makanan Pada Restoran/Warung Makan dengan menggunakan ReactJS, ReactBootstrap, SweetAllert dan Axios
               </h3>
             </div>
             <div  className="basis-1/3 flex-1">
-              <Image alt="" src={web2} className="rounded-lg object-cover" width={'0.1'} height={'0.1'} layout={"responsive"}/>
+              <Image alt="" src={web2} className="rounded-lg object-cover hover:animate-pulse hover:cursor-pointer" width={'0.1'} height={'0.1'} layout={"responsive"}/>
               <h3 className="text-center text-2xl text-teal-600 p-4">
                 Aplikasi CRUD <br /> dengan menerapkan Login Multi Role dengan menggunakan NodeJS, ExpressJS, ReactJS dan MySQL
               </h3>
             </div>
             <div  className="basis-1/3 flex-1">
-              <Image alt="" src={web3} className="rounded-lg object-cover" width={'0.1'} height={'0.1'} layout={"responsive"}/>
+              <Image alt="" src={web3} className="rounded-lg object-cover hover:animate-pulse hover:cursor-pointer" width={'0.1'} height={'0.1'} layout={"responsive"}/>
               <h3 className="text-center text-2xl text-teal-600 p-4">
                 Aplikasi Blog Post <br /> dengan menerapkan MERN Stack ~ MongoDB, ExpressJS, ReactJS, NodeJS 
               </h3>
             </div>
             <div  className="basis-1/3 flex-1">
-              <Image alt="" src={web4} className="rounded-lg object-cover" width={'0.1'} height={'0.1'} layout={"responsive"}/>
+              <Image onClick={bukaTabBaruPhotoSharing} alt="" src={web4} className="rounded-lg object-cover hover:animate-pulse hover:cursor-pointer" width={'0.1'} height={'0.1'} layout={"responsive"}/>
               <h3 className="text-center text-2xl text-teal-600 p-4">
                 Aplikasi Photo Sharing App <br /> dengan menggunakan NextJS, ExpressJS dan MariaDB
               </h3>

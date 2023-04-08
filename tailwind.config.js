@@ -24,7 +24,7 @@ module.exports = {
       'sxl': {'max': '1279px'},
       // => @media (max-width: 1279px) { ... }
 
-      'slg': {'max': '1023px'},
+      'lg': {'max': '4000px'},
       // => @media (max-width: 1023px) { ... }
 
       'md': {'max': '376px'},
