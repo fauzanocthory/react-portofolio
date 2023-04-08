@@ -32,7 +32,6 @@ import web2 from '../public/multi-role.png'
 import web3 from '../public/blog-post.png'
 import web4 from '../public/photo-sharing.png'
 import { useState } from 'react'
-import Link from "next/link"
 
 export default function Home() {
   const [darkMode, setDarkMode ] = useState(false)
@@ -95,7 +94,7 @@ export default function Home() {
             </p>
           </div>
           
-          <div className="lg:flex gap-10">
+          <div className="lg:flex sm:flex-col gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
               <Image src={design} alt="Logo" width={100} height={100}  className="m-auto"/>
               <h3 className="dark:text-gray-900 text-lg font-medium pt-8 pb-2 text-teal-600 underline">Node JS</h3>
@@ -150,28 +149,28 @@ export default function Home() {
             <h3 className="text-4xl py-1 text-teal-500 underline underline-offset-8">Portofolio</h3>
             <p className="dark:text-gray-200 text-md py-2 leading-8 text-gray-800">
               Inilah project-project yang pernah saya buat, ya walaupun belum kelihatan professional tapi jadilah dari pada engga hehe
-              <h4>
+            </p>
+            <h4>
                 Jika anda ingin melihat-lihat silahkan klik gambar dibawah
                 <br/>Username : root
                 <br/>password : root
-              </h4>
-            </p>
+            </h4>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div  className="basis-1/3 flex-1">
-              <Image onClick={bukaTabBaruKasirApp} alt="" src={web1} className="rounded-lg object-cover hover:animate-pulse hover:cursor-pointer" width={'0.1'} height={'0.1'} layout={"responsive"}/>
+              <Image onClick={bukaTabBaruKasirApp} alt="" src={web1} className="rounded-lg object-cover hover:animate-pulse hover:cursor-pointer" width={'0.1'} height={'0.1'}/>
               <h3 className="text-center text-2xl text-teal-600 p-4">
                 Aplikasi Pemesanan <br /> Makanan Pada Restoran/Warung Makan dengan menggunakan ReactJS, ReactBootstrap, SweetAllert dan Axios
               </h3>
             </div>
             <div  className="basis-1/3 flex-1">
-              <Image alt="" src={web2} className="rounded-lg object-cover hover:animate-pulse hover:cursor-pointer" width={'0.1'} height={'0.1'} layout={"responsive"}/>
+              <Image alt="" src={web2} className="rounded-lg object-cover hover:animate-pulse hover:cursor-pointer" width={'0.1'} height={'0.1'}/>
               <h3 className="text-center text-2xl text-teal-600 p-4">
                 Aplikasi CRUD <br /> dengan menerapkan Login Multi Role dengan menggunakan NodeJS, ExpressJS, ReactJS dan MySQL
               </h3>
             </div>
             <div  className="basis-1/3 flex-1">
-              <Image alt="" src={web3} className="rounded-lg object-cover hover:animate-pulse hover:cursor-pointer" width={'0.1'} height={'0.1'} layout={"responsive"}/>
+              <Image alt="" src={web3} className="rounded-lg object-cover hover:animate-pulse hover:cursor-pointer" width={'0.1'} height={'0.1'}/>
               <h3 className="text-center text-2xl text-teal-600 p-4">
                 Aplikasi Blog Post <br /> dengan menerapkan MERN Stack ~ MongoDB, ExpressJS, ReactJS, NodeJS 
               </h3>
